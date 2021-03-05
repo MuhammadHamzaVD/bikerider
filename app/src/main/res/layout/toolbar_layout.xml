@@ -5,19 +5,10 @@
     android:background="@color/colorAccent"
     android:elevation="4dp">
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:layout_margin="10dp"
-        android:text="Bikes Detail"/>
-    <TextView
-        android:id="@+id/logout_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="viewEnd"
-        android:layout_margin="10dp"
-        android:text="Logout"
-        android:textSize="15dp" />
+        android:background="@drawable/ic_baseline_arrow_back"
+        android:id="@+id/back_button"/>
 
 </androidx.appcompat.widget.Toolbar>

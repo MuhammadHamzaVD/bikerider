@@ -83,13 +83,12 @@ class MainActivity : DaggerActivity(), MainView , NavigationView.OnNavigationIte
 
         when (id){
             R.id.nav_main -> {
-                /*startActivity(Intent(this@MainActivity, SignupActivity::class.java))
-                finish()*/
+
             }
 
             R.id.nav_map -> {
                 startActivity(Intent(this@MainActivity, MapsActivity::class.java))
-                finish()            }
+            }
 
             R.id.nav_detail -> {
                 Toast.makeText(this, "Clicked Details", Toast.LENGTH_SHORT).show()

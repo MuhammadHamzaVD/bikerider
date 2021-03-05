@@ -3,7 +3,9 @@ package com.example.bike.riders.feature.maps.interactor
 import com.example.bike.riders.feature.maps.contracts.MapsInteractor
 import com.example.bike.riders.feature.maps.contracts.MapsInteractorOut
 import javax.inject.Inject
+import javax.inject.Singleton
 
+@Singleton
 class MapsInteractorImpl @Inject constructor() : MapsInteractor{
 
     private var mapsInteractorOut: MapsInteractorOut? = null
