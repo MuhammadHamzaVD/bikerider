@@ -54,7 +54,7 @@
         <activity android:name=".feature.login.view.LoginActivity" />
 
         <service
-            android:name=".java.MyFirebaseMessagingService"
+            android:name="com.example.bike.riders.MyFirebaseMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
