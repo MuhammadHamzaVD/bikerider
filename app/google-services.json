@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "512747620040",
+    "project_id": "fir-firebase-7e2df",
+    "storage_bucket": "fir-firebase-7e2df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512747620040:android:2144205665808c64f5c7fd",
+        "android_client_info": {
+          "package_name": "com.example.Bike.Riders"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "512747620040-4muocb00905ki3abf3q297jrrjq1t3ph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9JRpqwuqXr4c5LH6bbzeExZaqmJUDxtg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "512747620040-4muocb00905ki3abf3q297jrrjq1t3ph.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
