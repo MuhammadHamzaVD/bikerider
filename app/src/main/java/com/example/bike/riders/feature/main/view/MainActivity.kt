@@ -36,6 +36,9 @@ class MainActivity : DaggerActivity(), MainView , NavigationView.OnNavigationIte
     private lateinit var presenter: MainPresenter
     @Inject
     lateinit var mainInteractor: MainInteractor
+/*
+    var title="Notification Title"
+    var message="Notification Message"*/
 
     lateinit var adapter: NetworkAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,6 +46,17 @@ class MainActivity : DaggerActivity(), MainView , NavigationView.OnNavigationIte
 
         setContentView(R.layout.activity_main)
        // setSupportActionBar(toolbar)
+
+/*        if (intent.extras != null){
+            for (key in intent.extras!!.keySet()){
+                if (key == "title"){
+                    title=intent.extras!!.getString("title","")
+                }
+                if (key == "message"){
+                    message=intent.extras!!.getString("message","")
+                }
+            }
+        }*/
 
         progressBar.visibility = View.VISIBLE
         val toggle = ActionBarDrawerToggle(
