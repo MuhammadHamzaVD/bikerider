@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.example.bike.riders.feature.profileImage.view.ProfileImage">
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_baseline_image"/>
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/img_pick_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+        android:text="Choose Image"/>
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/capture_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+        android:text="Choose Camera"/>
+</LinearLayout>

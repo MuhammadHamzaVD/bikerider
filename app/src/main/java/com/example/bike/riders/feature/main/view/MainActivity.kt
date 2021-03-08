@@ -20,6 +20,7 @@ import com.example.bike.riders.feature.main.contracts.MainPresenter
 import com.example.bike.riders.feature.main.contracts.MainView
 import com.example.bike.riders.feature.main.presenter.MainPresenterImpl
 import com.example.bike.riders.feature.maps.view.MapsActivity
+import com.example.bike.riders.feature.profileImage.view.ProfileImage
 import com.example.bike.riders.feature.signup.view.SignupActivity
 import com.google.android.material.navigation.NavigationView
 import dagger.android.DaggerActivity
@@ -112,8 +113,8 @@ class MainActivity : DaggerActivity(), MainView , NavigationView.OnNavigationIte
                 presenter.checkLoggedOutUser()
             }
 
-            R.id.nav_aboutUs -> {
-                Toast.makeText(this, "Clicked About Us", Toast.LENGTH_SHORT).show()
+            R.id.nav_profileimage -> {
+                startActivity(Intent(this@MainActivity, ProfileImage::class.java))
             }
 
             R.id.nav_privacyPolicy -> {
