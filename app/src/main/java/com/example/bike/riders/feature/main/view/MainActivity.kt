@@ -24,6 +24,7 @@ import com.example.bike.riders.feature.profileImage.view.ProfileImage
 import com.example.bike.riders.feature.signup.view.SignupActivity
 import com.google.android.material.navigation.NavigationView
 import dagger.android.DaggerActivity
+import io.reactivex.Observable
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.content_main.*
@@ -37,27 +38,12 @@ class MainActivity : DaggerActivity(), MainView , NavigationView.OnNavigationIte
     private lateinit var presenter: MainPresenter
     @Inject
     lateinit var mainInteractor: MainInteractor
-/*
-    var title="Notification Title"
-    var message="Notification Message"*/
 
     lateinit var adapter: NetworkAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_main)
-       // setSupportActionBar(toolbar)
-
-/*        if (intent.extras != null){
-            for (key in intent.extras!!.keySet()){
-                if (key == "title"){
-                    title=intent.extras!!.getString("title","")
-                }
-                if (key == "message"){
-                    message=intent.extras!!.getString("message","")
-                }
-            }
-        }*/
 
         progressBar.visibility = View.VISIBLE
         val toggle = ActionBarDrawerToggle(
@@ -137,8 +123,8 @@ class MainActivity : DaggerActivity(), MainView , NavigationView.OnNavigationIte
 
     override fun displayData(arrayList: ArrayList<Bike>) {
         adapter = NetworkAdapter(this@MainActivity , arrayList)
-        bikesList.adapter = adapter
         bikesList.layoutManager = LinearLayoutManager(this@MainActivity)
+        bikesList.adapter = adapter
         progressBar.visibility = View.GONE
     }
 

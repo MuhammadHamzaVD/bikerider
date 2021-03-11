@@ -5,6 +5,6 @@ import retrofit2.Response
 
 interface MainInteractorOut {
     fun onLoggedOutUser()
-    fun passData(response: Response<Network>)
+    fun passData(response: Network)
     fun errorData(t: Throwable)
 }

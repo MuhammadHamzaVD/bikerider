@@ -25,14 +25,9 @@ class MainPresenterImpl(val view: MainView, val interactor: MainInteractor) : Ma
         view.navigateToHomeScreen()
     }
 
-    override fun passData(response: Response<Network>) {
-        if(response == null || !response.isSuccessful){
-            val message = "Empty Data"
-            view.displayError(message)
-        }else{
-            val networks = response.body()
-            networks?.bikes?.let { view.displayData(it) }
-        }
+    override fun passData(response: Network) {
+            response?.bikes?.let { view.displayData(it) }
+
     }
 
     override fun errorData(t: Throwable) {

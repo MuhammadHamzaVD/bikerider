@@ -75,7 +75,6 @@ class ProfileImage : AppCompatActivity() {
         private val IMAGE_PICK_CODE = 1000
         private val PERMISSION_CODE = 1001
     }
-
     override fun onRequestPermissionsResult(
             requestCode: Int,
             permissions: Array<out String>,
